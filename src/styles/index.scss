@@ -1,0 +1,70 @@
+body {
+  font-size: 14px;
+  color: #222222;
+}
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* quill-editor css reset */
+*:focus {
+  outline: none;
+}
+.quill-editor {
+  line-height: 1;
+  .ql-snow {
+    border-color: #dcdfe6;
+    .ql-editor {
+      display: block;
+      resize: vertical;
+      padding: 5px 15px;
+      line-height: 1.5;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 100px;
+      font-size: inherit;
+      color: #606266;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #dcdfe6;
+      border-radius: 0 0 4px 4px;
+      transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      &:hover {
+        border-color: #c0c4cc;
+      }
+      &:focus {
+        border-color: #409EFF;
+        outline: 0;
+      }
+    }
+  }
+  .ql-toolbar.ql-snow {
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+  }
+  .ql-container.ql-snow {
+    border: none;
+  }
+}
+.is-error {
+  .quill-editor {
+    .ql-snow {
+      .ql-editor {
+        border-color: #f56c6c;
+      }
+    }    
+  }
+}
+.el-form-item {
+  .el-button {
+    width: 120px;
+  }
+}
